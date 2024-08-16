@@ -1,76 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
 }
+
 .container {
-    max-width: 400px;
-    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-}
-form {
-    margin-top: 20px;
-}
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-    color: #555;
-}
-input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: #333;
-}
+
 button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #28a745;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.2em;
     cursor: pointer;
-    font-size: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
+
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
-#results {
+
+.guesses-info {
     margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: #333;
+    font-size: 1.1em;
 }
-#weightguide {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-#weightguide h3 {
-    margin-top: 0;
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-#weightguide p {
+
+.guesses-info p {
     margin: 5px 0;
-    color: #555;
 }
